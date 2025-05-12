@@ -1,3 +1,95 @@
+input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
+    This = 0
+    resiv = ""
+    for (let index = 0; index < list.length; index++) {
+        if (This - 1 == list.length) {
+            radio.sendString(resiv)
+        } else {
+            if (list[This] == 1) {
+                resiv = "" + resiv + "A"
+            }
+            if (list[This] == 2) {
+                resiv = "" + resiv + "B"
+            }
+            if (list[This] == 3) {
+                resiv = "" + resiv + "C"
+            }
+            if (list[This] == 4) {
+                resiv = "" + resiv + "D"
+            }
+            if (list[This] == 5) {
+                resiv = "" + resiv + "E"
+            }
+            if (list[This] == 6) {
+                resiv = "" + resiv + "F"
+            }
+            if (list[This] == 7) {
+                resiv = "" + resiv + "G"
+            }
+            if (list[This] == 8) {
+                resiv = "" + resiv + "H"
+            }
+            if (list[This] == 9) {
+                resiv = "" + resiv + "I"
+            }
+            if (list[This] == 10) {
+                resiv = "" + resiv + "J"
+            }
+            if (list[This] == 11) {
+                resiv = "" + resiv + "K"
+            }
+            if (list[This] == 12) {
+                resiv = "" + resiv + "L"
+            }
+            if (list[This] == 13) {
+                resiv = "" + resiv + "M"
+            }
+            if (list[This] == 14) {
+                resiv = "" + resiv + "N"
+            }
+            if (list[This] == 15) {
+                resiv = "" + resiv + "O"
+            }
+            if (list[This] == 16) {
+                resiv = "" + resiv + "P"
+            }
+            if (list[This] == 17) {
+                resiv = "" + resiv + "Q"
+            }
+            if (list[This] == 18) {
+                resiv = "" + resiv + "R"
+            }
+            if (list[This] == 19) {
+                resiv = "" + resiv + "S"
+            }
+            if (list[This] == 20) {
+                resiv = "" + resiv + "T"
+            }
+            if (list[This] == 21) {
+                resiv = "" + resiv + "U"
+            }
+            if (list[This] == 22) {
+                resiv = "" + resiv + "V"
+            }
+            if (list[This] == 23) {
+                resiv = "" + resiv + "W"
+            }
+            if (list[This] == 24) {
+                resiv = "" + resiv + "X"
+            }
+            if (list[This] == 25) {
+                resiv = "" + resiv + "Y"
+            }
+            if (list[This] == 26) {
+                resiv = "" + resiv + "Z"
+            }
+            if (list[This] == 27) {
+                resiv = "" + resiv + "_"
+            }
+            This = This + 1
+        }
+    }
+})
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     if (ABC == 1) {
         ABC = 28
@@ -18,6 +110,10 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     } else {
         ABC = ABC + 1
     }
+})
+radio.onReceivedString(function (receivedString) {
+    basic.setLedColors(0x00ff00, 0x00ff00, 0x00ff00, 20)
+    basic.showString(receivedString)
 })
 input.onPinTouchEvent(TouchPin.P0, input.buttonEventDown(), function () {
     This = 0
@@ -125,12 +221,10 @@ input.onPinTouchEvent(TouchPin.P0, input.buttonEventDown(), function () {
         }
     }
 })
-input.onPinTouchEvent(TouchPin.P3, input.buttonEventDown(), function () {
-	
-})
 let Display = ""
-let This = 0
 let list: number[] = []
+let resiv = ""
+let This = 0
 let ABC = 0
 ABC = 1
 basic.forever(function () {
