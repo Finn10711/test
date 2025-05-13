@@ -28,6 +28,24 @@ enum RadioMessage {
     Z = 29658,
     _ = 5125
 }
+radio.onReceivedMessage(RadioMessage.J, function () {
+    Zeige = "" + Zeige + "J"
+})
+radio.onReceivedMessage(RadioMessage.X, function () {
+    Zeige = "" + Zeige + "X"
+})
+radio.onReceivedMessage(RadioMessage.V, function () {
+    Zeige = "" + Zeige + "V"
+})
+radio.onReceivedMessage(RadioMessage.M, function () {
+    Zeige = "" + Zeige + "M"
+})
+radio.onReceivedMessage(RadioMessage.N, function () {
+    Zeige = "" + Zeige + "N"
+})
+radio.onReceivedMessage(RadioMessage.I, function () {
+    Zeige = "" + Zeige + "I"
+})
 input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
     M = 0
     resiv = ""
@@ -121,11 +139,32 @@ input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
     }
     radio.sendMessage(RadioMessage.message1)
 })
+radio.onReceivedMessage(RadioMessage.O, function () {
+    Zeige = "" + Zeige + "O"
+})
 radio.onReceivedMessage(RadioMessage.A, function () {
     Zeige = "" + Zeige + "A"
 })
 radio.onReceivedMessage(RadioMessage.C, function () {
     Zeige = "" + Zeige + "C"
+})
+radio.onReceivedMessage(RadioMessage.S, function () {
+    Zeige = "" + Zeige + "S"
+})
+radio.onReceivedMessage(RadioMessage.L, function () {
+    Zeige = "" + Zeige + "L"
+})
+radio.onReceivedMessage(RadioMessage.T, function () {
+    Zeige = "" + Zeige + "S"
+})
+radio.onReceivedMessage(RadioMessage.Y, function () {
+    Zeige = "" + Zeige + "Y"
+})
+radio.onReceivedMessage(RadioMessage._, function () {
+    Zeige = "" + Zeige + "_"
+})
+radio.onReceivedMessage(RadioMessage.U, function () {
+    Zeige = "" + Zeige + "S"
 })
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
     if (ABC == 1) {
@@ -154,8 +193,20 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
         ABC = ABC + 1
     }
 })
+radio.onReceivedMessage(RadioMessage.Z, function () {
+    Zeige = "" + Zeige + "Z"
+})
+radio.onReceivedMessage(RadioMessage.W, function () {
+    Zeige = "" + Zeige + "W"
+})
 radio.onReceivedMessage(RadioMessage.F, function () {
     Zeige = "" + Zeige + "F"
+})
+radio.onReceivedMessage(RadioMessage.H, function () {
+    Zeige = "" + Zeige + "H"
+})
+radio.onReceivedMessage(RadioMessage.Q, function () {
+    Zeige = "" + Zeige + "Q"
 })
 radio.onReceivedMessage(RadioMessage.B, function () {
     Zeige = "" + Zeige + "B"
@@ -266,6 +317,15 @@ input.onPinTouchEvent(TouchPin.P0, input.buttonEventDown(), function () {
         }
     }
 })
+radio.onReceivedMessage(RadioMessage.K, function () {
+    Zeige = "" + Zeige + "K"
+})
+radio.onReceivedMessage(RadioMessage.P, function () {
+    Zeige = "" + Zeige + "P"
+})
+radio.onReceivedMessage(RadioMessage.R, function () {
+    Zeige = "" + Zeige + "R"
+})
 radio.onReceivedMessage(RadioMessage.E, function () {
     Zeige = "" + Zeige + "E"
 })
@@ -276,10 +336,10 @@ radio.onReceivedMessage(RadioMessage.message1, function () {
 let Display2 = 0
 let Display = ""
 let This = 0
-let Zeige = ""
 let list: number[] = []
 let resiv = ""
 let M = 0
+let Zeige = ""
 let ABC = 0
 ABC = 1
 basic.forever(function () {
