@@ -2,7 +2,31 @@ enum RadioMessage {
     message1 = 49434,
     A = 18289,
     B = 9031,
-    C = 32803
+    C = 32803,
+    D = 3456,
+    E = 46605,
+    F = 24246,
+    G = 6494,
+    H = 57881,
+    I = 58338,
+    J = 51171,
+    K = 19399,
+    L = 6987,
+    M = 10523,
+    N = 62761,
+    O = 59125,
+    P = 57574,
+    Q = 11232,
+    R = 57643,
+    S = 45537,
+    T = 6833,
+    U = 39706,
+    V = 38555,
+    W = 54422,
+    X = 36564,
+    Y = 55950,
+    Z = 29658,
+    _ = 5125
 }
 input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
     M = 0
@@ -18,79 +42,79 @@ input.onPinTouchEvent(TouchPin.P1, input.buttonEventDown(), function () {
                 radio.sendMessage(RadioMessage.B)
             }
             if (list[M] == 3) {
-                resiv = "" + resiv + "C"
+                radio.sendMessage(RadioMessage.C)
             }
             if (list[M] == 4) {
-                resiv = "" + resiv + "D"
+                radio.sendMessage(RadioMessage.D)
             }
             if (list[M] == 5) {
-                resiv = "" + resiv + "E"
+                radio.sendMessage(RadioMessage.E)
             }
             if (list[M] == 6) {
-                resiv = "" + resiv + "F"
+                radio.sendMessage(RadioMessage.F)
             }
             if (list[M] == 7) {
-                resiv = "" + resiv + "G"
+                radio.sendMessage(RadioMessage.G)
             }
             if (list[M] == 8) {
-                resiv = "" + resiv + "H"
+                radio.sendMessage(RadioMessage.H)
             }
             if (list[M] == 9) {
-                resiv = "" + resiv + "I"
+                radio.sendMessage(RadioMessage.I)
             }
             if (list[M] == 10) {
-                resiv = "" + resiv + "J"
+                radio.sendMessage(RadioMessage.J)
             }
             if (list[M] == 11) {
-                resiv = "" + resiv + "K"
+                radio.sendMessage(RadioMessage.K)
             }
             if (list[M] == 12) {
-                resiv = "" + resiv + "L"
+                radio.sendMessage(RadioMessage.L)
             }
             if (list[M] == 13) {
-                resiv = "" + resiv + "M"
+                radio.sendMessage(RadioMessage.M)
             }
             if (list[M] == 14) {
-                resiv = "" + resiv + "N"
+                radio.sendMessage(RadioMessage.N)
             }
             if (list[M] == 15) {
-                resiv = "" + resiv + "O"
+                radio.sendMessage(RadioMessage.O)
             }
             if (list[M] == 16) {
-                resiv = "" + resiv + "P"
+                radio.sendMessage(RadioMessage.P)
             }
             if (list[M] == 17) {
-                resiv = "" + resiv + "Q"
+                radio.sendMessage(RadioMessage.Q)
             }
             if (list[M] == 18) {
-                resiv = "" + resiv + "R"
+                radio.sendMessage(RadioMessage.R)
             }
             if (list[M] == 19) {
-                resiv = "" + resiv + "S"
+                radio.sendMessage(RadioMessage.S)
             }
             if (list[M] == 20) {
-                resiv = "" + resiv + "T"
+                radio.sendMessage(RadioMessage.T)
             }
             if (list[M] == 21) {
-                resiv = "" + resiv + "U"
+                radio.sendMessage(RadioMessage.U)
             }
             if (list[M] == 22) {
-                resiv = "" + resiv + "V"
+                radio.sendMessage(RadioMessage.V)
             }
             if (list[M] == 23) {
-                resiv = "" + resiv + "W"
+                radio.sendMessage(RadioMessage.W)
             }
             if (list[M] == 24) {
-                resiv = "" + resiv + "X"
+                radio.sendMessage(RadioMessage.X)
             }
             if (list[M] == 25) {
-                resiv = "" + resiv + "Y"
+                radio.sendMessage(RadioMessage.Y)
             }
             if (list[M] == 26) {
-                resiv = "" + resiv + "Z"
+                radio.sendMessage(RadioMessage.Z)
             }
             if (list[M] == 27) {
-                resiv = "" + resiv + "_"
+                radio.sendMessage(RadioMessage._)
             }
             M = M + 1
         }
