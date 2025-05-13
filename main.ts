@@ -134,6 +134,12 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
         ABC = ABC - 1
     }
 })
+radio.onReceivedMessage(RadioMessage.G, function () {
+    Zeige = "" + Zeige + "G"
+})
+radio.onReceivedMessage(RadioMessage.D, function () {
+    Zeige = "" + Zeige + "D"
+})
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     if (ABC == 28) {
         list.pop()
@@ -147,6 +153,9 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     } else {
         ABC = ABC + 1
     }
+})
+radio.onReceivedMessage(RadioMessage.F, function () {
+    Zeige = "" + Zeige + "F"
 })
 radio.onReceivedMessage(RadioMessage.B, function () {
     Zeige = "" + Zeige + "B"
@@ -256,6 +265,9 @@ input.onPinTouchEvent(TouchPin.P0, input.buttonEventDown(), function () {
             This = This + 1
         }
     }
+})
+radio.onReceivedMessage(RadioMessage.E, function () {
+    Zeige = "" + Zeige + "E"
 })
 radio.onReceivedMessage(RadioMessage.message1, function () {
     Display2 = 1
