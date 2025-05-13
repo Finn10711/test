@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "v3": "*",
-        "radio-broadcast": "*"
+        "radio-broadcast": "*",
+        "warte bis...": "github:calliope-edu/warte-bis#705b034fbec4a032ae43a6284b152073836abbd1"
     },
     "files": [
         "main.blocks",
